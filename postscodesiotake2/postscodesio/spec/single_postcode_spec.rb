@@ -17,5 +17,10 @@ describe Postcodesio do
       expect(@postcodesio.get_result).to be_kind_of(Hash)
     end
 
+    it 'should respond with the postcode as a string and 7-8 characters long' do
+      expect(@file.get_postcode('cr81ez')).to be_kind_of(String)
+      expect(@file.get_postcode('cr81ez').length).to be_between(7,8).inclusive
+    end
+
   end
 end

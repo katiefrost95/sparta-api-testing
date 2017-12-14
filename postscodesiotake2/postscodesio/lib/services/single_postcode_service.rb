@@ -20,6 +20,12 @@ class SinglePostcodeService
     @single_postcode_data['status']
   end
 
+  def get_postcode(postcode)
+    get_single_postcode(postcode)["result"]["postcode"]
+  end
+
+
+
 end
 
 # call = SinglePostcodeService.new

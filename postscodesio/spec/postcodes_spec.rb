@@ -7,7 +7,7 @@ describe 'test postcodesio' do
   end
 
   a = "cr81ez"
-  b = ["cr81ez", "b296au"]
+  b = ["cr81ez" "b296au"]
 
   it 'single postcode should be a Hash' do
     expect(@file.get_single_postcode('cr81ez')).to be_kind_of(Hash)

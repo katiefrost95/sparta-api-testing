@@ -1,4 +1,4 @@
-require 'httparty'
+Prequire 'httparty'
 require 'json'
 
 class SinglePostcodeService
